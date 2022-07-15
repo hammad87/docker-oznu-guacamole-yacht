@@ -1,0 +1,30 @@
+[
+  {
+    "title": "guacamole",
+    "name": "guacamole",
+    "image": "oznu/guacamole",
+    "description": "oznu/guacamole ",
+    "categories": [],
+    "platform": "linux",
+    "note": "",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "8000:8080/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "~/dx/guacamole/config"
+      }
+    ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
+    "network_mode": "bridge"
+  }
+]
